@@ -27,3 +27,14 @@ body {
     display: block;
     text-align: right;
 }
+#menu-left ul li a:link, #menu-left ul li a:visited, #menu-left ul li a:active {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+}   
+#menu-left ul li a:hover {
+
+    color: #4b71ed;
+    text-decoration: none;
+    
+}
