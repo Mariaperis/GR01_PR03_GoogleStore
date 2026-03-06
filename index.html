@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header class="header">
-    <div>
+    <header class="header">
+        <div id="logo">
+            <img src="images/google-logo.png" alt="Google Store Logo">
+        </div>
         <nav id="menu-left">
             <ul>
                 <li><a href="#">Phones</a></li>
@@ -20,14 +24,29 @@
                 <li><a href="#">Subscriptions</a></li>
             </ul>
         </nav>
-    </div>
-    <div id="iconos">
-        <img src="images/icons/Search.svg" alt="Search Icon">
-        <img src="images/icons/Help.svg" alt="Help Icon">
-        <img src="images/icons/Cart.svg" alt="Cart Icon">
-        <img src="images/icons/Avatar.svg" alt="Avatar Icon">
-    </div>
-</header>
-    
+
+        <div id="iconos">
+            <img src="images/icons/Search.svg" alt="Search Icon">
+            <img src="images/icons/Help.svg" alt="Help Icon">
+            <img src="images/icons/Cart.svg" alt="Cart Icon">
+            <img src="images/icons/Avatar.svg" alt="Avatar Icon">
+        </div>
+         <div class="menu-btn" id="menuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const menu = document.getElementById('menu');
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('show');
+        });
+    </script>
 </body>
+
 </html>
