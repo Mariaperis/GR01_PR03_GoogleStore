@@ -161,4 +161,47 @@ body {
         display: flex;
 
     }
+}.divisor-gris {
+  border: 1;
+  border-top: 1px solid #0c0c0c; 
+  margin: 1; 
+} 
+
+/* Contenedor para alinear los círculos horizontalmente */
+.color-selector {
+  display: flex;
+  gap: 12px; /* Espacio entre círculos */
+  margin-top: 15px; /* Separación con el texto superior */
+}
+
+/* Estilo base para cada círculo */
+.color-dot {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%; /* Esto los hace circulares */
+  border: 1px solid #dadce0; /* Borde sutil */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  padding: 0;
+}
+
+/* Efecto al pasar el ratón */
+.color-dot:hover {
+  transform: scale(1.1);
+  border-color: #70757a;
+}
+
+/* Colores específicos (puedes ajustarlos a tu gusto) */
+.blue { background-color: #a1c2fa; }
+.charcoal { background-color: #e1e9ef; }
+.porcelain { background-color: #181919; }
+.lemongrass { background-color: #808279; }
+.green { background-color:#E0E6B6; }
+.red { background-color:#E08573; }
+
+
+.color-dot:hover {
+    transform: scale(1.1);
+    border-color: #070707;
+    
 }
