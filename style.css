@@ -205,3 +205,70 @@ body {
     border-color: #070707;
     
 }
+cart-card {
+  background-color: #f8f9fa; /* Gris muy claro */
+  border-radius: 8px;
+  padding: 24px;
+  max-width: 350px;
+  margin-top: 30px;
+}
+
+.card-price {
+  font-family: 'Google Sans', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0 0 15px 0;
+  color: #101111;
+}
+
+.card-divider {
+  border: 0;
+  border-top: 1px solid #dadce0;
+  margin-bottom: 20px;
+}
+
+/* Fila para alinear selector y botón */
+.action-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.qty-selector {
+  padding: 10px;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  background: white;
+  font-size: 16px;
+  width: 60px;
+  cursor: pointer;
+}
+
+.add-btn {
+  flex-grow: 1; /* Hace que el botón ocupe el espacio restante */
+  background-color: #1a73e8; /* Azul Google */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.add-btn:hover {
+  background-color: #1765cc;
+}
+
+/* Info de envío */
+.delivery-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #2c2cdf;
+}
+
+.truck-icon {
+  font-size: 18px;
+}
