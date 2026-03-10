@@ -4,34 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Google Pixel Buds Pro</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
     <header class="header">
-        <div id="logo">
+        <nav class="nav">
             <img src="images/google-logo.png" alt="Google Store Logo">
-        </div>
-        <nav id="menu-left">
-            <ul>
-                <li><a href="#">Phones</a></li>
-                <li><a href="#">Earbuds</a></li>
-                <li><a href="#">Watches</a></li>
-                <li><a href="#">Smart Home</a></li>
-                <li><a href="#">Accesories</a></li>
-                <li><a href="#">Subscriptions</a></li>
-            </ul>
+            <a href="#">Phones</a>
+            <a href="#">Earbuds</a>
+            <a href="#">Watches</a>
+            <a href="#">Smart Home</a>
+            <a href="#">Accesories</a>
+            <a href="#">Subscriptions</a>
         </nav>
-
-        <div id="iconos">
+        <div class="header-icons">
             <img src="images/icons/Search.svg" alt="Search Icon">
             <img src="images/icons/Help.svg" alt="Help Icon">
             <img src="images/icons/Cart.svg" alt="Cart Icon">
             <img src="images/icons/Avatar.svg" alt="Avatar Icon">
         </div>
-         <div class="menu-btn" id="menuBtn">
+        <div class="menu-btn" id="menuBtn">
             <span></span>
             <span></span>
             <span></span>
@@ -49,45 +43,40 @@
             <img src="images/earbuds/earbuds_01.png" alt="Google Pixel Buds Pro">
         </div>
     </section>
-    <section class="product-info">
+    <aside class="product-info">
         <h1>Google Pixel Buds Pro</h1>
-        <p>Music & Sound</p>
-        <h2>229€</h2>
-        <nav>
- </nav>
-<hr class="divisor-gris">
-<p class="description-footer">choose a color</p>
-    
-<div class="color-selector">
-  <button class="color-dot blue" aria-label="Blue"></button>
-  <button class="color-dot charcoal" aria-label="Charcoal"></button>
-  <button class="color-dot porcelain" aria-label="Porcelain"></button>
-  <button class="color-dot lemongrass" aria-label="Lemongrass"></button>
-  <button class="color-dot green" aria-label="Green"></button>
-  <button class="color-dot red" aria-label="Red"></button>
-</div>
-  <p class="delivery-info">
-  <div class="cart-card">
-  <p class="card-price">229 €</p>
-  <hr class="card-divider">
-  
-  <div class="action-row">
-    <select class="qty-selector">
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-    </select>
-    
-    <button class="add-btn">Add to Cart</button>
-  </div>
-
-  <div class="delivery-info">
-    <span class="truck-icon"><img src="images/icons/Delivery.svg" alt="Truck Icon"></span>
-    <p>Delivers 29 Apr to <b>08023</b></p>
-  </div>
-</div>  
-  </p>
-</div>     
+        <p class="category">Music & Sound</p>
+        <p class="price">229€</p>
+        <hr>
+        <div class="colors">
+            <p>Choose a color</p>
+            <div class="color-selector">
+                <button class="color-dot blue" aria-label="Blue"></button>
+                <button class="color-dot charcoal" aria-label="Charcoal"></button>
+                <button class="color-dot porcelain" aria-label="Porcelain"></button>
+                <button class="color-dot lemongrass" aria-label="Lemongrass"></button>
+                <button class="color-dot green" aria-label="Green"></button>
+                <button class="color-dot red" aria-label="Red"></button>
+            </div>
+        </div>
+        <div class="buy-box">
+            <p class="buy-price">229€</p>
+            <div class="buy-action">
+                <select>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <button class="add-cart">
+                    Add to Cart
+                </button>
+            </div>
+            <p class="delivery">
+                <span class="truck-icon"><img src="images/icons/Delivery.svg" alt="Truck Icon"></span>
+                Delivers 29 Apr to <b>08023</b>
+            </p>
+        </div>
+    </aside>
 </main>
     <script>
         const menuBtn = document.getElementById('menuBtn');
