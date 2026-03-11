@@ -1,4 +1,4 @@
-/*GENERAL*/
+/* -------------- GENERAL -------------- */
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@ body {
 
 
 
-/*HEADER*/
+/* -------------- HEADER -------------- */
 .header {
     display: flex;
     justify-content: space-between; 
@@ -25,7 +25,7 @@ body {
 
 
 
-/*NAVEGACIÓN*/
+/* -------------- NAVEGACIÓN -------------- */
 .nav {
     display: flex;
     align-items: center;
@@ -80,7 +80,7 @@ body {
 
 
 
-/* CONTENEDOR PRINCIPAL */
+/* -------------- CONTENEDOR PRINCIPAL -------------- */
 .product-container{
     max-width:1200px;
     margin:40px auto;
@@ -93,7 +93,7 @@ body {
 
 
 
-/* GALERÍA */
+/* -------------- GALERÍA -------------- */
 .product-gallery{
     display:grid;
     grid-template-columns:80px 1fr;
@@ -102,7 +102,7 @@ body {
 
 
 
-/* MINIATURAS */
+/* -------------- MINIATURAS -------------- */
 .product-circle{
     display:flex;
     flex-direction:column;
@@ -124,7 +124,7 @@ body {
 
 
 
-/* IMAGEN PRINCIPAL */
+/* -------------- IMAGEN PRINCIPAL -------------- */
 .product-big{
     padding: 40px;
     border-radius: 20px;
@@ -139,7 +139,7 @@ body {
 
 
 
-/* INFO PRODUCTO */
+/* -------------- INFO PRODUCTO -------------- */
 .product-info{
     display:flex;
     flex-direction:column;
@@ -164,7 +164,7 @@ body {
 
 
 
-/*COLORES*/
+/* -------------- COLORES -------------- */
 .colors{
     margin-top: 10px;
 }
@@ -199,7 +199,7 @@ body {
 
 
 
-/*CAJA DE COMPRA*/
+/* -------------- CAJA DE COMPRA -------------- */
 .buy-box{
     background-color: #ebebeb; /* Gris muy claro */
     border-radius: 12px;
@@ -244,10 +244,16 @@ select{
 .delivery {
     font-size: 14px;
     color: #666;
-}   
+}
+
+.text-blue {
+    color: #1a73e8;
+    font-weight: 600;
+}
 
 
-/*JS*/
+/* -------------- RESPONSIVE --------------- */
+/*DESKTOP*/
 @media (max-width: 768px) {
 #menu-left {
     display: none; }
@@ -255,5 +261,41 @@ select{
     .menu-btn {
         display: flex;
 
+    }
+}
+
+/*TABLET*/
+@media (max-width: 1024px) {
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+
+    .product-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .product-big {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+/*MOBILE*/
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav a{
+        display: none;
+    }
+    .product-info h1 {
+        font-size: 24px;
+    }
+    .buy-action {
+        flex-direction: column;
+    }
+    .product-big {
+        padding: 20px;
     }
 }
