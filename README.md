@@ -3,11 +3,11 @@ PR03 F5 Google Store
 Diseño y desarrollo de una página web responsive
 
 # Equipo de desarrollo:
-Maria Luisa Peris — Frontend
-Carmen Lareo — Frontend
-Melisa Guardia — Frontend
-Susana Alvarez — Frontend
-Kharla Quevedo — Frontend
+- Maria Luisa Peris — Desarrolladora
+- Carmen Lareo — Desarrolladora
+- Melisa Guardia — Desarrolladora
+- Susana Alvarez — Desarrolladora
+- Kharla Quevedo — Desarrolladora
 
 # Objetivo del proyecto
 Desarrollar una web inspirada en Google Store que:
